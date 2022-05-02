@@ -14,8 +14,8 @@ void setup() {
   pinMode(TRIGPIN, OUTPUT);
   pinMode(ECHOPIN, INPUT);
 
-  Serial.begin(9600);
-  // mySerial.begin(9600);
+  // Serial.begin(9600);
+  mySerial.begin(9600);
 }
 
 void loop() {
@@ -27,13 +27,13 @@ void loop() {
 
 void printSensorValue() { 
 
-  Serial.println(distance);
-  /*
+  //Serial.println(distance);
+  
   if (mySerial.available() > 0) {
      mySerial.print(distance); 
      mySerial.println();
   }
-  */
+  
 }
 
 void getDistance() {
